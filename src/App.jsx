@@ -5,8 +5,8 @@ function App() {
     <div className="App">
       <div className='d-flex flex-row vh-100 vw-100'>
         <div className='vh-100 w-25 bg-primary'></div>
-        <div className='vh-100 w-75 bg-danger d-flex flex-column justify-content-center align-content-center'>
-          <form className='w-50'>
+        <div className='vh-100 w-75 bg-danger d-flex flex-column justify-content-center'>
+          <form className='w-50 mx-auto'>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
