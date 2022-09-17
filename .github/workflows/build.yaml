@@ -3,7 +3,7 @@ name: Build & Redeploy
 on:
   push:
     branches:
-      - 'main'
+      - '*'
 
 jobs:
   docker:
