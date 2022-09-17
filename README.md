@@ -1,3 +1,6 @@
+
+[![Build & Redeploy](https://github.com/arasfi/delivery-frontend-reactjs/actions/workflows/build.yaml/badge.svg?event=push)](https://github.com/arasfi/delivery-frontend-reactjs/actions/workflows/build.yaml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
