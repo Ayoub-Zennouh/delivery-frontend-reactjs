@@ -1,6 +1,5 @@
 
-[![Build & Redeploy](https://github.com/arasfi/delivery-frontend-reactjs/actions/workflows/build.yaml/badge.svg?event=push)](https://github.com/arasfi/delivery-frontend-reactjs/actions/workflows/build.yaml)
-
+[![Build & Redeploy](https://github.com/arasfi/delivery-frontend-reactjs/actions/workflows/build.yaml/badge.svg?event=push)](https://github.com/arasfi/delivery-frontend-reactjs/actions/workflows/build.yaml) [![codebeat badge](https://codebeat.co/badges/e928afa1-3d28-43c7-a9d7-000fe8b544b4)](https://codebeat.co/projects/github-com-arasfi-delivery-frontend-reactjs-main)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
