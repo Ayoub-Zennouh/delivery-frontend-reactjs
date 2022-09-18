@@ -18,7 +18,7 @@ jobs:
       - name: Build Docker image
         run: docker build --tag $REPO:${GITHUB_SHA::8} .
       - name: Publish Docker image
-        run: docker push $REPO:${GITHUB_SHA::8}
+        run: docker push $REPO:${GITHUB_SHA::8} 
   redeploy:
     name: Redeploy webhook call
     runs-on: ubuntu-22.04
