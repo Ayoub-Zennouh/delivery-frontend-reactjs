@@ -31,16 +31,3 @@ jobs:
         env:
           WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL  }}
           data: "{ 'myField': 'myFieldValue'}"
-      - name: Use Node.js 10.x 
-        uses: actions/setup-node@v1 
-        with: 
-          node-version: 10.x 
-      - name: npm install, make test-coverage 
-        run: |
-          cd ..
-          npm install
-          make test-coverage 
-      - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@v1.1.0
-        with: 
-          github-token: ${{ secrets.MY_TOKEN }}
