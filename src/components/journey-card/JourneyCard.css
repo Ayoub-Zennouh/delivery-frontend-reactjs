@@ -1,0 +1,81 @@
+.firstBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondBox {
+    display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.firstNode {
+    display: flex;
+    align-items: center;
+}
+.secondNode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.thirdNode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image  {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.Mui-selected {
+    color: #000 !important;
+    border-color: #3ea4d8 !important;
+}
+.username {
+    color: #000 ;
+}
+.userRole {
+    color: #9f9fa6  !important;
+}
+
+.title {
+    color: #9f9fa6 !important;
+}
+.MuiTabs-indicator {
+    background-color: #3ea4d8 !important;
+}
+.MuiTab-root {
+    color: #ccc ;
+    border-color: #3ea4d8 !important;
+    margin: 0px 5px !important;
+}
+
+.btn-custom {
+    background-color: #3ea4d8 !important;
+    border-color: #3ea4d8 !important;
+    height: fit-content;
+    text-transform: capitalize;
+    border-radius: 20px !important;
+}
+.MuiButtonBase-root {
+    text-transform: capitalize !important;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+.componentContainer {
+    background-color: #000;
+    justify-content: center;
+}
+
+.componentChild {
+    background-color: #fff;
+    height: fit-content;
+    border-radius: 8px;
+    margin: 15px;
+}
