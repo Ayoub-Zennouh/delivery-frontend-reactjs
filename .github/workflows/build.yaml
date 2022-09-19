@@ -31,3 +31,5 @@ jobs:
         env:
           WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL  }}
           data: "{ 'myField': 'myFieldValue'}"
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@1.1.3
