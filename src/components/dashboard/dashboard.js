@@ -1,63 +1,79 @@
 import React from 'react';
 import './dashboard.css';
 
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import Divider from '@mui/material/Divider';
 
 
-const Dashboard = () => (
-  <div className='d-flex flex-row vh-100 vw-100 main'>
-    <div className='bg-primary left-grid'>
-      <div class="accordion list" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Overview
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+
+export default function Dashboard() {
+
+  const [open, setOpen] = React.useState(true);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+  return (
+    <div className='d-flex flex-row vh-100 vw-100 main'>
+      <div className='bg-primary left-grid'>
+
+      </div>
+      <div className='d-flex flex-row justify-content-center right-grid'>
+        <div className='center-left bg-transparent'>
+          <input className='search-field mt-4 mb-2' placeholder='Search'></input>
+          <h3>Active orders</h3>
+          <div className='w-100 d-flex flex-column p-3'>
+            <div className='card'>
+              <div className='d-flex flex-row justify-content-between p-2'>
+                <div className='col-3'>
+                  <label>Order ID</label>
+                  <label>#1394</label>
+                </div>
+                <div className='col-3'>
+                  <label>Name of product</label>
+                  <label>Comstruction</label>
+                </div>
+                <div className='col-3'>
+                  <button className='btn btn-primary'>in transit</button>
+                </div>
+              </div>
+              <Divider />
+
+              <div className='d-flex flex-row justify-content-between p-2'>
+                <div class="rightbox">
+                  <div class="rb-container">
+                    <ul class="rb">
+                      <li class="rb-item" ng-repeat="itembx">
+                        <div class="timestamp">
+                          3rd May 2020 7:00 PM
+                        </div>
+                        <div class="item-title">Depart.</div>
+
+                      </li>
+
+                      <li class="rb-item" ng-repeat="itembx">
+                        <div class="timestamp">
+                          17st June 2020 7:00 PM
+                        </div>
+                        <div class="item-title">Arrivee</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <Divider />
+
+              <div className='d-flex flex-row justify-content-between p-2'>
+                
+              </div>
             </div>
           </div>
+
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Vehicles
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              History
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-            </div>
-          </div>
+        <div className='center-right h-100 bg-danger'>
+
         </div>
       </div>
     </div>
-    <div className='d-flex flex-row justify-content-center right-grid'>
-      <div className='center-left bg-transparent'>
-        <h3>Tracks</h3>
-        <input className='search-field mt-5' placeholder='Search'></input>
-        <ListItemButton component="a" href="#simple-list">
-              <ListItemText primary="Spam" />
-        </ListItemButton>
+  );
+}
 
-      </div>
-      <div className='col-8 h-100 bg-danger'>
-
-      </div>
-    </div>
-  </div>
-);
-
-export default Dashboard;
