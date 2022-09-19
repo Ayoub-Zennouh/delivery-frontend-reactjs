@@ -2,10 +2,20 @@ import React from 'react';
 import './dashboard.css';
 
 import Divider from '@mui/material/Divider';
+import JourneyCard from '../journey-card/JourneyCard'
+import GoogleMapReact from 'google-map-react';
 
-
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export default function Dashboard() {
+
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627
+    },
+    zoom: 16
+  };
 
   const [open, setOpen] = React.useState(true);
 
@@ -63,14 +73,24 @@ export default function Dashboard() {
               <Divider />
 
               <div className='d-flex flex-row justify-content-between p-2'>
-                
+
               </div>
             </div>
           </div>
 
         </div>
-        <div className='center-right h-100 bg-danger'>
-
+        <div style={{ position: 'relative' }} className='center-right h-100 w-100 bg-danger'>
+          <div style={{ position: 'absolute', top:'0', left:'0', height: '100vh', width: '100%' }}>
+            <GoogleMapReact
+              bootstrapURLKeys={{ key: "" }}
+              defaultCenter={defaultProps.center}
+              defaultZoom={defaultProps.zoom}
+            >
+            </GoogleMapReact>
+          </div>
+          <div className="w-100" style={{ position: 'absolute', bottom:'0', left:'0' }}>
+            <JourneyCard />
+          </div>
         </div>
       </div>
     </div>
