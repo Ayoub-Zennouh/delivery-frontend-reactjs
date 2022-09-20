@@ -180,8 +180,15 @@ body {
 }
 
 
+.rs-sidenav-item.rs-sidenav-item-active {
+    border-left: 4px solid #fff !important;
+    background-color: #62e01600 !important;
+}
 
 
+.backgroundBlue {
+    background-color:  #3498ff;
+}
 
 
 
